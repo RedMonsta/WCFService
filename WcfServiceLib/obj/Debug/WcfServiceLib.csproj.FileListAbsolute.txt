@@ -4,3 +4,14 @@ D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\WcfServiceLib\bin\Debug\WcfServi
 D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\WcfServiceLib\obj\Debug\WcfServiceLib.csprojResolveAssemblyReference.cache
 D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\WcfServiceLib\obj\Debug\WcfServiceLib.dll
 D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\WcfServiceLib\obj\Debug\WcfServiceLib.pdb
+D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\WcfServiceLib\bin\Debug\DataModelDB.mdf
+D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\WcfServiceLib\bin\Debug\DataModelDB_log.ldf
+D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\WcfServiceLib\bin\Debug\DataModel.dll
+D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\WcfServiceLib\bin\Debug\EntityFramework.dll
+D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\WcfServiceLib\bin\Debug\EntityFramework.SqlServer.dll
+D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\WcfServiceLib\bin\Debug\DataModel.pdb
+D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\WcfServiceLib\bin\Debug\DataModel.dll.config
+D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\WcfServiceLib\bin\Debug\EntityFramework.xml
+D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\WcfServiceLib\bin\Debug\EntityFramework.SqlServer.xml
+D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\WcfServiceLib\bin\Debug\Newtonsoft.Json.dll
+D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\WcfServiceLib\bin\Debug\Newtonsoft.Json.xml

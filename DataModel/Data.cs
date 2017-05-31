@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.IO;
 
 namespace DataModel
 {
@@ -27,6 +28,10 @@ namespace DataModel
         public void AddUser(User usr)
         {
             UserList.Add(usr);
+            //using (StreamWriter sw = new StreamWriter(@"C:\Users\vambr\Desktop\wcf.txt", false, System.Text.Encoding.Default))
+            //{
+            //    sw.WriteLine("i'm here");
+            //}
         }
 
         public void AddOrder(Order ord)

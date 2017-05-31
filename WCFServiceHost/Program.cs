@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ServiceModel;
 
 namespace WCFServiceHost
 {
@@ -10,6 +11,12 @@ namespace WCFServiceHost
     {
         static void Main(string[] args)
         {
+            using (var host = new ServiceHost(typeof(WcfServiceLib.WCFService)))
+            {
+                host.Open();
+                Console.WriteLine("Host is running");
+                Console.ReadKey();
+            }
         }
     }
 }
