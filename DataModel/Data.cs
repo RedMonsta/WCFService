@@ -23,6 +23,13 @@ namespace DataModel
             OrderList = new List<Order>();
             UserList = new List<User>();
             AddressUserLinksList = new List<AddressUserLink>();
+
+            //using (TestDBContext db = new TestDBContext())
+            //{
+            //    var user = new User(30, "name");
+            //    db.Users.Add(user);
+            //    db.SaveChanges();
+            //}
         }
 
         public void AddUser(User usr)

@@ -9,18 +9,18 @@ namespace DataModel
 {
    public class Address
    {
-        [Key]
+        //[Key]
         public int Id { get; set; }
-        [Required]
+        //[Required]
         public string City { get; set; }
-        [Required]
+        //[Required]
         public string Street { get; set; }
-        [Required]
+        //[Required]
         public int Build { get; set; }
-        [Required]
+        //[Required]
         public int Flat { get; set; }
-        //public List<int> OrderList { get; set; }
-        //public List<int> UserList { get; set; }
+        public List<int> OrderList { get; set; }
+        public List<int> UserList { get; set; }
 
         public Address(int id, string city, string street, int build, int flat)
         {
@@ -29,8 +29,8 @@ namespace DataModel
             Street = street;
             Build = build;
             Flat = flat;
-            //OrderList = new List<int>();
-            //UserList = new List<int>();
+            OrderList = new List<int>();
+            UserList = new List<int>();
         }
     }
 }

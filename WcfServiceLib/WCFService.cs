@@ -7,21 +7,23 @@ using System.Text;
 using DataModel;
 using System.IO;
 using Newtonsoft.Json;
+using System.Data.Entity;
 
 namespace WcfServiceLib
 {
     public class WCFService : IWCFService
     {
-        private DataModel.DataModelContext db;
+        //private DataModel.DataModelContext db;
         private DataModel.Data data;
         private string path;
 
         public WCFService()
         {
             data = new Data();
-            //Load();
-            db = new DataModelContext();
+            
+            //db = new DataModelContext();
             path = @"C:\Users\vambr\Desktop\data.txt";
+            Load();
             //var user = new User(30, "vlad");
             //db.Users.Add(user);
             //db.SaveChanges();
@@ -31,8 +33,8 @@ namespace WcfServiceLib
         {
             var user = new User(data.AI_User++, name);
             data.AddUser(user);
-            db.Users.Add(user);
-            db.SaveChanges();
+            //db.Users.Add(user);
+            //db.SaveChanges();
             Save();
             return user.Id;
             //return 0;
@@ -42,8 +44,8 @@ namespace WcfServiceLib
         {
             var addr = new Address(data.AI_Address++, city, street, build, flat);
             data.AddAddress(addr);
-            db.Addresses.Add(addr);
-            db.SaveChanges();
+            //db.Addresses.Add(addr);
+            //db.SaveChanges();
             return addr.Id;
         }
 
@@ -51,8 +53,9 @@ namespace WcfServiceLib
         {
             var ord = new Order(data.AI_Order++, goodname, UserId, AddrId);
             data.AddOrder(ord);
-            db.Orders.Add(ord);
-            db.SaveChanges();
+            //Save();
+            //db.Orders.Add(ord);
+            //db.SaveChanges();
             return ord.Id;
         }
 
@@ -60,8 +63,8 @@ namespace WcfServiceLib
         {
             var link = new AddressUserLink(data.AI_AddressUserLink, UserId, AddrId);
             data.AddAddressUserLink(link);
-            db.AddressUserLinks.Add(link);
-            db.SaveChanges();
+            //db.AddressUserLinks.Add(link);
+            //db.SaveChanges();
             return link.Id;
         }
 
@@ -71,9 +74,9 @@ namespace WcfServiceLib
             if (data.UserList.Exists(x => x.Id == UserId))
             {
                 data.RemoveUser(data.UserList.Find(x => x.Id == UserId));
-                User user = db.Users.Find(UserId);
-                db.Users.Remove(user);
-                db.SaveChanges();
+                //User user = db.Users.Find(UserId);
+                //db.Users.Remove(user);
+                //db.SaveChanges();
                 return true;
             }
             else
@@ -87,9 +90,9 @@ namespace WcfServiceLib
             if (data.OrderList.Exists(x => x.Id == OrdId))
             {
                 data.RemoveOrder(data.OrderList.Find(x => x.Id == OrdId));
-                Order ord = db.Orders.Find(OrdId);
-                db.Orders.Remove(ord);
-                db.SaveChanges();
+                //Order ord = db.Orders.Find(OrdId);
+                //db.Orders.Remove(ord);
+                //db.SaveChanges();
                 return true;
             }
             else
@@ -103,9 +106,9 @@ namespace WcfServiceLib
             if (data.AddressList.Exists(x => x.Id == AddrId))
             {
                 data.RemoveAddress(data.AddressList.Find(x => x.Id == AddrId));
-                Address addr = db.Addresses.Find(AddrId);
-                db.Addresses.Remove(addr);
-                db.SaveChanges();
+                //Address addr = db.Addresses.Find(AddrId);
+                //db.Addresses.Remove(addr);
+                //db.SaveChanges();
                 return true;
             }
             else
@@ -119,15 +122,24 @@ namespace WcfServiceLib
             if (data.AddressUserLinksList.Exists(x => x.Id == LinkId))
             {
                 data.RemoveAddressUserLink(data.AddressUserLinksList.Find(x => x.Id == LinkId));
-                AddressUserLink link = db.AddressUserLinks.Find(LinkId);
-                db.AddressUserLinks.Remove(link);
-                db.SaveChanges();
+                //AddressUserLink link = db.AddressUserLinks.Find(LinkId);
+                //db.AddressUserLinks.Remove(link);
+                //db.SaveChanges();
                 return true;
             }
             else
             {
                 return false;
             }
+        }
+
+        public string GetData()
+        {
+            return JsonConvert.SerializeObject(data, new JsonSerializerSettings
+            {
+                TypeNameHandling = TypeNameHandling.All,
+                Formatting = Formatting.Indented
+            });
         }
 
         private void Load()

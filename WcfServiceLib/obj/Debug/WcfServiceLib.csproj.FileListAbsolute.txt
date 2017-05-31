@@ -15,3 +15,5 @@ D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\WcfServiceLib\bin\Debug\EntityFr
 D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\WcfServiceLib\bin\Debug\EntityFramework.SqlServer.xml
 D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\WcfServiceLib\bin\Debug\Newtonsoft.Json.dll
 D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\WcfServiceLib\bin\Debug\Newtonsoft.Json.xml
+D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\WcfServiceLib\bin\Debug\TestDB.mdf
+D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\WcfServiceLib\bin\Debug\TestDB_log.ldf

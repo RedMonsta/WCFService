@@ -10,3 +10,5 @@ D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\DataModel\bin\Debug\EntityFramew
 D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\DataModel\obj\Debug\DataModel.csprojResolveAssemblyReference.cache
 D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\DataModel\obj\Debug\DataModel.dll
 D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\DataModel\obj\Debug\DataModel.pdb
+D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\DataModel\bin\Debug\TestDB.mdf
+D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\DataModel\bin\Debug\TestDB_log.ldf

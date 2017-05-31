@@ -9,13 +9,13 @@ namespace DataModel
 {
     public class Order
     {
-        [Key]
+        //[Key]
         public int Id { get; set; }
-        [Required]
+        //[Required]
         public string GoodName { get; set; }
-        [Required]
+        //[Required]
         public int AddressID { get; set; }
-        [Required]
+        //[Required]
         public int UserID { get; set; }
         
         public Order(int id, string name, int user_id, int address_id)

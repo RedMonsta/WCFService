@@ -55,6 +55,10 @@ namespace WcfServiceLib
 
         [OperationContract]
         bool RemoveAddressUserLink(int LinkId);
+
+
+        [OperationContract]
+        string GetData();
     }
 
 

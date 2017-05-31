@@ -9,11 +9,11 @@ namespace DataModel
 {
     public class AddressUserLink
     {
-        [Key]
+        //[Key]
         public int Id { get; set; }
-        [Required]
+        //[Required]
         public int UserID { get; set; }
-        [Required]
+        //[Required]
         public int AddressID { get; set; }
 
         public AddressUserLink(int id, int user_id, int address_id)
