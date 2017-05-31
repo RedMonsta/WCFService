@@ -1,0 +1,6 @@
+D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\WcfServiceLib\bin\Debug\WcfServiceLib.dll.config
+D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\WcfServiceLib\bin\Debug\WcfServiceLib.dll
+D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\WcfServiceLib\bin\Debug\WcfServiceLib.pdb
+D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\WcfServiceLib\obj\Debug\WcfServiceLib.csprojResolveAssemblyReference.cache
+D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\WcfServiceLib\obj\Debug\WcfServiceLib.dll
+D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\WcfServiceLib\obj\Debug\WcfServiceLib.pdb
