@@ -16,8 +16,8 @@ namespace WcfServiceLib
         //[OperationContract]
         //void Load();
 
-        //[OperationContract]
-        //string GetData();
+        [OperationContract]
+        string GetData();
 
 
         [OperationContract]
@@ -27,7 +27,7 @@ namespace WcfServiceLib
         int AddAddress(string city, string street, int build, int flat);
 
         [OperationContract]
-        int AddOrder(string goodname, int UserId, int AddrId);
+        int AddOrder(string goodname);
 
 
         [OperationContract]
@@ -40,50 +40,29 @@ namespace WcfServiceLib
         bool RemoveOrder(int OrdId);
 
 
-        //[OperationContract]
-        //int AddOrderToUser(int UserId, int OrdId);
+        [OperationContract]
+        bool AddOrderToUser(int OrdId, int UserId);
 
         [OperationContract]
-        int AddAddressUserLink(int UserId, int AddrId);
-
-
-        //[OperationContract]
-        //bool RemoveOrderFromUser(int UserId, int OrdId);
-
-        //[OperationContract]
-        //bool RemoveAddressUserLink(int UserId, int AddrId);
+        bool AddAddressToUser(int AddrId, int UserId);
 
         [OperationContract]
-        bool RemoveAddressUserLink(int LinkId);
+        bool AddUserToAddress(int UserId, int AddrId);
+
+        [OperationContract]
+        bool AddOrderToAddress(int OrderId, int AddrId);
 
 
         [OperationContract]
-        string GetData();
+        bool RemoveOrderFromUser(int OrdId, int UserId);
+
+        [OperationContract]
+        bool RemoveAddressFromUser(int AddrId, int UserId);
+
+        [OperationContract]
+        bool RemoveUserFromAddress(int UserId, int AddrId);
+
+        [OperationContract]
+        bool RemoveOrderFromAddress(int OrderId, int AddrId);
     }
-
-
-
-
-    // Используйте контракт данных, как показано на следующем примере, чтобы добавить сложные типы к сервисным операциям.
-    // В проект можно добавлять XSD-файлы. После построения проекта вы можете напрямую использовать в нем определенные типы данных с пространством имен "WcfServiceLib.ContractType".
-    //[DataContract]
-    //public class CompositeType
-    //{
-    //    bool boolValue = true;
-    //    string stringValue = "Hello ";
-
-    //    [DataMember]
-    //    public bool BoolValue
-    //    {
-    //        get { return boolValue; }
-    //        set { boolValue = value; }
-    //    }
-
-    //    [DataMember]
-    //    public string StringValue
-    //    {
-    //        get { return stringValue; }
-    //        set { stringValue = value; }
-    //    }
-    //}
 }

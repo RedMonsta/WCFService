@@ -9,15 +9,10 @@ namespace DataModel
 {
    public class Address
    {
-        //[Key]
         public int Id { get; set; }
-        //[Required]
         public string City { get; set; }
-        //[Required]
         public string Street { get; set; }
-        //[Required]
         public int Build { get; set; }
-        //[Required]
         public int Flat { get; set; }
         public List<int> OrderList { get; set; }
         public List<int> UserList { get; set; }

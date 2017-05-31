@@ -1,14 +1,6 @@
-D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\DataModel\bin\Debug\DataModelDB.mdf
-D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\DataModel\bin\Debug\DataModelDB_log.ldf
 D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\DataModel\bin\Debug\DataModel.dll.config
 D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\DataModel\bin\Debug\DataModel.dll
 D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\DataModel\bin\Debug\DataModel.pdb
-D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\DataModel\bin\Debug\EntityFramework.dll
-D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\DataModel\bin\Debug\EntityFramework.SqlServer.dll
-D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\DataModel\bin\Debug\EntityFramework.xml
-D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\DataModel\bin\Debug\EntityFramework.SqlServer.xml
 D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\DataModel\obj\Debug\DataModel.csprojResolveAssemblyReference.cache
 D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\DataModel\obj\Debug\DataModel.dll
 D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\DataModel\obj\Debug\DataModel.pdb
-D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\DataModel\bin\Debug\TestDB.mdf
-D:\БГУИР\GitHub\GitHubKSiS\Lab3\WCFService\DataModel\bin\Debug\TestDB_log.ldf

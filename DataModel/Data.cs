@@ -14,31 +14,16 @@ namespace DataModel
         public List<User> UserList { get; set; }
         public int AI_User;
 
-        public List<AddressUserLink> AddressUserLinksList { get; set; }
-        public int AI_AddressUserLink;
-
         public Data()
         {
             AddressList = new List<Address>();
             OrderList = new List<Order>();
             UserList = new List<User>();
-            AddressUserLinksList = new List<AddressUserLink>();
-
-            //using (TestDBContext db = new TestDBContext())
-            //{
-            //    var user = new User(30, "name");
-            //    db.Users.Add(user);
-            //    db.SaveChanges();
-            //}
         }
 
         public void AddUser(User usr)
         {
             UserList.Add(usr);
-            //using (StreamWriter sw = new StreamWriter(@"C:\Users\vambr\Desktop\wcf.txt", false, System.Text.Encoding.Default))
-            //{
-            //    sw.WriteLine("i'm here");
-            //}
         }
 
         public void AddOrder(Order ord)
@@ -49,11 +34,6 @@ namespace DataModel
         public void AddAddress(Address addr)
         {
             AddressList.Add(addr);
-        }
-
-        public void AddAddressUserLink(AddressUserLink addrord)
-        {
-            AddressUserLinksList.Add(addrord);
         }
 
         public void RemoveUser(User usr)
@@ -70,12 +50,5 @@ namespace DataModel
         {
             AddressList.Remove(addr);
         }
-
-        public void RemoveAddressUserLink(AddressUserLink addrord)
-        {
-            AddressUserLinksList.Remove(addrord);
-        }
-
-
     }
 }
