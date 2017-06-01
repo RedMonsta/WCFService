@@ -295,7 +295,7 @@ namespace WcfServiceLib
 
         private void Load()
         {
-            string json = File.ReadAllText(path);
+            string json = File.ReadAllText(path, Encoding.UTF8);
             data = JsonConvert.DeserializeObject<Data>(json, new JsonSerializerSettings
             {
                 TypeNameHandling = TypeNameHandling.All
@@ -309,7 +309,7 @@ namespace WcfServiceLib
                 TypeNameHandling = TypeNameHandling.All,
                 Formatting = Formatting.Indented
             });
-            File.WriteAllText(path, json);
+            File.WriteAllText(path, json, Encoding.UTF8);
         }
     }
 }
